@@ -29,7 +29,7 @@ Clone the repository and open the index.html file in your browser to explore the
 <br>
 <h1>🌐 Portfolio Website</h1>
 <br>
-Explore my Portfolio Website(https://adnanhashmii.github.io/Portfolio-Website/) to see a showcase of my latest projects and accomplishments. This website highlights my skills in web development, design, and problem-solving, with detailed examples of my work, including an Image Gallery, a Scientific Calculator, and other projects. Visit the site to learn more about my approach to frontend development and the creative solutions I bring to the table.
+Explore my Portfolio Website(https://adnanhashmii.github.io/Portfolio_Website_Codealpha_tasks/) to see a showcase of my latest projects and accomplishments. This website highlights my skills in web development, design, and problem-solving, with detailed examples of my work, including an Image Gallery, a Scientific Calculator, and other projects. Visit the site to learn more about my approach to frontend development and the creative solutions I bring to the table.
 <br>
 <h1>Contributing</h1>
 <br>
