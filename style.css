@@ -1,0 +1,321 @@
+.form-control {
+    box-shadow: 2px 4px 9px;
+}
+
+.git {
+    background: transparent;
+    color: black;
+    box-shadow: 2px 4px 9px;
+}
+
+.bi-fire {
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #900;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    font-weight: 500;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    box-shadow: 2px 2px 20px #4d0000;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 6px; /* Adjust if needed */
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before, .navbar-nav .nav-link.active::before {
+    transform: translateX(0);
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #fff !important; /* Keep the text color white */
+    background-color: transparent !important; /* Ensure no background color change */
+}
+
+.navbar-toggler {
+    border-color: transparent;
+    color: #fff !important;
+}
+/*Home section*/
+.home-content {
+    margin-top:6%;
+    margin-left: 10%;
+}
+
+.stylized-name {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.professions {
+    font-style: italic;
+    color: #900;
+    text-align: justify;
+}
+
+.heroline {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.buttonGroup {
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #900;
+    color: black; /* Change text color to black */
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+}
+
+.btn-secondary:hover {
+    background-color: #900;
+    color: #fff;
+}
+
+.side-img {
+    position: relative;
+    text-align: center;
+    margin-top: 20px; /* Adjusted for responsiveness */
+}
+
+.side-img img {
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    width: 100%;
+    height: auto; /* Ensures the image scales properly */
+}
+
+.top-right-corner, .bottom-left-corner {
+    position: absolute;
+    z-index: 10;
+}
+
+.top-right-corner {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left-corner {
+    bottom: 0;
+    left: 0;
+}
+
+.slide-help {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+h2 {
+    font-family: 'Berkshire Swash', cursive;
+}
+/*skills*/
+/* Updated CSS for Services Section */
+.card {
+    border: 1px solid #900;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;  
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly reduced scale for smoother effect */
+    /* background-color:#cccccc; */
+    box-shadow: 3px 3px 4px #9b1b1b;
+    background-size: cover;
+}
+
+.card h3 {
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 400; /* Adjusted to a more standard weight */
+    margin: 1rem 0; /* Margin for spacing around the heading */
+}
+
+.icon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Flexible columns */
+    gap: 1rem; /* Spacing between items */
+    justify-content: start; /* Align grid items to the start */
+}
+
+.icon-container .svg {
+    display: flex;
+    flex-direction: column; /* Align icons and text vertically */
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+}
+
+.svg svg {
+    width: 44px; /* Set width for SVG icons */
+    height: 44px; /* Set height for SVG icons */
+    margin-bottom: 0.5rem; /* Margin between icon and text */
+}
+
+.svg h4 {
+    margin: 0; /* Remove margin around text */
+    font-size: 1rem; /* Adjust font size as needed */
+}
+/*Experience section*/
+#experience {
+    height: 800px;
+    padding: 20px;
+}
+
+.title h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stacks boxes vertically */
+    gap: 10px; /* Space between boxes */
+    padding: 0px 30px;
+    border-left: 2px solid #900;
+  
+ min-height: 300px; /* Adjust based on your content */
+    
+}
+
+.content .Box {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #900;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.4s;
+    width: 100%; /* Ensures the box takes up the full width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+   
+    text-align: justify;
+}
+
+.content .Box::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 2px;
+    background-color: #900;
+    border: 2px solid white;
+}
+@media (max-width: 576px) {
+    .Box {
+      margin-bottom: 15px; /* Adjust for small devices */
+    }
+  }
+/*projects*/
+.img-fluid{
+    border: 1px solid black;
+}
+
+  #experience {
+    margin-bottom: 100px; /* Adjust as needed */
+  }
+  
+  #portfolio {
+    margin-top: 100px; /* Adjust as needed */
+  }  
+  .portfolio-item img {
+    height: 250px; /* Fixed height */
+    width: 100%; /* Full width */
+    object-fit: contain; /* Ensures the whole image is visible */
+    
+}
+  #experience, #portfolio {
+    overflow: hidden; /* Clears floats */
+  }
+/*contact section*/
+#contact{
+    border:1px solid #900;
+}
+.form-content {
+    /* border-left:2px solid #900; */
+    max-width: 400px;
+    padding: 30px;
+    background: transparent;
+    color: black;
+    margin: auto;
+    margin-top: 50px;
+   
+}
+.form-content input{
+    padding-left: 30px;
+}
+.form-content input[type="text"],
+.form-content input[type="email"],
+.form-content textarea {
+    background: transparent;
+    color: black;
+    border: 1px solid #900;
+    border-radius: 10px;
+}
+.form-content input[type="text"]::placeholder,
+.form-content input[type="email"]::placeholder,
+.form-content textarea::placeholder {
+    color: black;
+}
+.form-content .btn {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #900;
+    border: none;
+}
+.form-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*footer*/
+footer {
+    color: #fff;
+    background: #900;
+    bottom: 0px;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #900;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+  }
+  footer a {
+    color: #999;
+  }
+  footer a:hover {
+    color: #efefef;
+  }
